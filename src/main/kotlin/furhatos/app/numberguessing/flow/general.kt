@@ -1,11 +1,15 @@
 package furhatos.app.numberguessing.flow
 
 import furhatos.flow.kotlin.*
+import furhatos.gestures.Gestures
 import furhatos.util.*
 
 val Idle: State = state {
 
     init {
+        furhat.ledStrip.solid(java.awt.Color.BLUE)
+        furhat.setTexture("Rene")
+        furhat.gesture(Gestures.OpenEyes)
         furhat.setVoice(Language.ENGLISH_US, Gender.FEMALE)
         if (users.count > 0) {
             furhat.attend(users.random)

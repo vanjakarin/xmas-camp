@@ -1,0 +1,4 @@
+16:28:45 [Skill] INFO  Skill:139 - Connecting to Furhat server on 192.168.1.131:1932
+16:28:46 [NumberguessingSkill] INFO  NumberguessingSkill:173 - Starting skill
+16:29:47 [NumberguessingSkill] ERROR SynthesizerUtils:117 - Cannot read from URL: classpath:resources/Breathing+Heavy.wav
+16:29:47 [NumberguessingSkill] ERROR Furhat:317 - Could not locate audio resource: classpath:resources/Breathing+Heavy.wav
