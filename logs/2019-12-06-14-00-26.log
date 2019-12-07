@@ -1,0 +1,16 @@
+14:00:26 [Skill] INFO  Skill:139 - Connecting to Furhat server on 192.168.1.131:1932
+14:01:36 [Skill] ERROR EventSystem:186 - Timed out while waiting for class furhatos.event.responses.ResponseWebServerPort
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at furhatos.event.EventSystem.sendAndWait(EventSystem.java:183)
+	at furhatos.event.EventSystem.sendAndWait(EventSystem.java:173)
+	at furhatos.skills.Skill.requestFurhatWebPort(Skill.java:249)
+	at furhatos.skills.Skill.startSkill(Skill.java:226)
+	at furhatos.skills.Skill.main(Skill.java:94)
+	at furhatos.app.numberguessing.MainKt.main(main.kt:14)
+14:01:36 [Skill] ERROR Skill:231 - java.util.concurrent.TimeoutException
+14:01:36 [Skill] WARN  Skill:232 - Unable to get real furhatWebPort, using default of 80
+14:01:36 [NumberguessingSkill] INFO  NumberguessingSkill:173 - Starting skill
+14:01:39 [NumberguessingSkill] WARN  FurhatEventWrapper:314 - Could not find voice:  (en-US) - Unknown
+14:01:45 [NumberguessingSkill] WARN  Flow: 88 - Flow unknown unresponsive, 5725 ms since last event poll
